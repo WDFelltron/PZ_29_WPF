@@ -1,0 +1,32 @@
+﻿<Window x:Class="PZ_29.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PZ_29"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="Output" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Background="Black" Foreground="LimeGreen" TextChanged="Output_TextChanged"></TextBox>
+        <TextBox x:Name="Input" Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="2"></TextBox>
+        <Button x:Name="Open" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Content="1. Открыть счет" Click="Open_Click"></Button>
+        <Button x:Name="Enter" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Content="2. Вывести средства" Click="Enter_Click"></Button>
+        <Button x:Name="Add" Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="2" Content="3. Добавить на счет" Click="Add_Click"></Button>
+        <Button x:Name="Close" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Content="4. Закрыть счет" Click="Close_Click"></Button>
+        <Button x:Name="Skip" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Content="5. Пропустить день" Click="Skip_Click"></Button>
+        <Button x:Name="Quit" Grid.Row="2" Grid.Column="4" Grid.ColumnSpan="2" Content="6. Выйти из программы" Click="Quit_Click"></Button>
+    </Grid>
+</Window>
